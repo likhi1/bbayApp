@@ -9,52 +9,86 @@ class BbayApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white70,
+        backgroundColor: Colors.cyan.shade50,
         appBar: AppBar(
-          title: Center(child: Text('Menu')),
+          title: Center(child: Text('Home')),
           backgroundColor: Colors.cyan[300],
         ),
         body: SafeArea(
-          //** set  SafeArea for iPhone Area Screen
-          //child: Image(image: AssetImage('images/01-thumbnail.jpg')),
-
-          child: Row(
-            // mainAxisSize: MainAxisSize.min, // ** set shrink outline box
-            // mainAxisAlignment:   MainAxisAlignment.spaceBetween, // ** set Position & Space
-            crossAxisAlignment:
-                CrossAxisAlignment.stretch, // ** set Align object
-            //verticalDirection: VerticalDirection.down,
-
-            children: <Widget>[
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.blue,
-                child: Text('Container 1'),
-              ),
-              SizedBox(
-                width: 30.0, //**  set create margin
-              ),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.red,
-                child: Text('Container 2'),
-              ),
-              SizedBox(
-                width: 30.0,
-              ),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                //width: double.infinity, //**stretch col & row
-                color: Colors.green,
-                child: Text('Container 3'),
-              ),
-              SizedBox(
-                width: 30.0,
-              ),
-            ],
+          child: Container(
+            padding: EdgeInsets.all(20.0),
+            child: Column(
+              children: <Widget>[
+                CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage('images/user.jpg'),
+                ),
+                Text(
+                  ' บางตะบูนเบย์ ',
+                  style: TextStyle(
+                    fontSize: 35.0,
+                    color: Colors.black38,
+                    fontFamily: 'Sriracha Regular',
+                  ),
+                ),
+                Text(
+                  ' ริมแม่น้ำบางตะบูน ',
+                  style: TextStyle(
+                    fontSize: 35.0,
+                    color: Colors.black38,
+                    fontFamily: 'Kanit Light',
+                  ),
+                ),
+                Container(
+                    padding: EdgeInsets.all(10.0),
+                    color: Colors.white,
+                    margin:
+                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.phone,
+                          color: Colors.cyan,
+                        ),
+                        SizedBox(
+                          width: 30.0,
+                        ),
+                        Text(
+                          'ริมแม่น้ำบางตะบูน',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontFamily: 'Kanit Thin',
+                              fontSize: 20.0,
+                              letterSpacing: 1.0),
+                        ),
+                      ],
+                    )),
+                Container(
+                    padding: EdgeInsets.all(10.0),
+                    color: Colors.white,
+                    margin:
+                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.email,
+                          color: Colors.cyan,
+                        ),
+                        SizedBox(
+                          width: 30.0,
+                        ),
+                        Text(
+                          'ร้านอาหารทะเลเพชรบุรี',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontFamily: 'Kanit Thin',
+                              fontSize: 20.0,
+                              letterSpacing: 1.0),
+                        ),
+                      ],
+                    )),
+              ],
+            ),
           ),
         ),
       ),
