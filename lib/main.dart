@@ -33,7 +33,7 @@ class BbayApp extends StatelessWidget {
                 child: Text('Container 1'),
               ),
               SizedBox(
-                width: 30.0, //**  set create margin
+                height: 30.0, //**  set create margin
               ),
               Container(
                 height: 100.0,
@@ -42,7 +42,7 @@ class BbayApp extends StatelessWidget {
                 child: Text('Container 2AAAAAAA'),
               ),
               SizedBox(
-                width: 30.0,
+                height: 30.0,
               ),
               Container(
                 height: 100.0,
@@ -52,7 +52,7 @@ class BbayApp extends StatelessWidget {
                 child: Text('Container 3'),
               ),
               SizedBox(
-                width: 30.0,
+                height: 30.0,
               ),
             ],
           ),
