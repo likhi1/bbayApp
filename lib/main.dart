@@ -18,7 +18,7 @@ class BbayApp extends StatelessWidget {
           //** set  SafeArea for iPhone Area Screen
           //child: Image(image: AssetImage('images/01-thumbnail.jpg')),
 
-          child: Column(
+          child: Row(
             // mainAxisSize: MainAxisSize.min, // ** set shrink outline box
             // mainAxisAlignment:   MainAxisAlignment.spaceBetween, // ** set Position & Space
             crossAxisAlignment:
@@ -33,16 +33,16 @@ class BbayApp extends StatelessWidget {
                 child: Text('Container 1'),
               ),
               SizedBox(
-                height: 30.0, //**  set create margin
+                width: 30.0, //**  set create margin
               ),
               Container(
                 height: 100.0,
                 width: 100.0,
                 color: Colors.red,
-                child: Text('Container 2AAAAAAA'),
+                child: Text('Container 2'),
               ),
               SizedBox(
-                height: 30.0,
+                width: 30.0,
               ),
               Container(
                 height: 100.0,
@@ -52,7 +52,7 @@ class BbayApp extends StatelessWidget {
                 child: Text('Container 3'),
               ),
               SizedBox(
-                height: 30.0,
+                width: 30.0,
               ),
             ],
           ),
