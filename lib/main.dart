@@ -18,6 +18,7 @@ class BbayApp extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(20.0),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
                   radius: 50.0,
@@ -34,59 +35,56 @@ class BbayApp extends StatelessWidget {
                 Text(
                   ' ริมแม่น้ำบางตะบูน ',
                   style: TextStyle(
-                    fontSize: 35.0,
+                    fontSize: 25.0,
                     color: Colors.black38,
                     fontFamily: 'Kanit Light',
                   ),
                 ),
-                Container(
-                    padding: EdgeInsets.all(10.0),
-                    color: Colors.white,
-                    margin:
-                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                    child: Row(
-                      children: <Widget>[
-                        Icon(
-                          Icons.phone,
-                          color: Colors.cyan,
-                        ),
-                        SizedBox(
-                          width: 30.0,
-                        ),
-                        Text(
-                          'ริมแม่น้ำบางตะบูน',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontFamily: 'Kanit Thin',
-                              fontSize: 20.0,
-                              letterSpacing: 1.0),
-                        ),
-                      ],
-                    )),
-                Container(
-                    padding: EdgeInsets.all(10.0),
-                    color: Colors.white,
-                    margin:
-                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                    child: Row(
-                      children: <Widget>[
-                        Icon(
-                          Icons.email,
-                          color: Colors.cyan,
-                        ),
-                        SizedBox(
-                          width: 30.0,
-                        ),
-                        Text(
-                          'ร้านอาหารทะเลเพชรบุรี',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontFamily: 'Kanit Thin',
-                              fontSize: 20.0,
-                              letterSpacing: 1.0),
-                        ),
-                      ],
-                    )),
+                SizedBox(
+                  height: 20.0,
+                  width: 250.0,
+                  child: Divider(
+                    color: Colors.cyan,
+                  ),
+                ),
+                Card(
+                  // color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.cyan,
+                    ),
+                    title: Text(
+                      'ริมแม่น้ำบางตะบูน',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Kanit Light',
+                          fontSize: 17.0,
+                          letterSpacing: 1.0),
+                    ),
+                  ),
+                ),
+                Card(
+                  //color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.cyan,
+                    ),
+                    title: Text(
+                      'ร้านอาหารทะเลเพชรบุรี',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Kanit Light',
+                          fontSize: 17.0,
+                          letterSpacing: 1.0),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
